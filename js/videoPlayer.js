@@ -8,7 +8,7 @@ const fullScreen = document.querySelector(".fa-compress");
 const videoContainer = document.querySelector(".banner-player");
 
 bar.addEventListener("click", barPosition);
-videoContainer.addEventListener("timeupdate", updateBar);
+video.addEventListener("timeupdate", updateBar);
 playPauseIcon.addEventListener("click", playPause);
 undo.addEventListener("click", ()=>{video.currentTime -= 5});
 redo.addEventListener("click", ()=>{video.currentTime += 5});
@@ -40,6 +40,13 @@ function barPosition(e){
 function setFullScreen(){
   if(videoContainer.fullscreenElement){
     videoContainer.exitFullscreen();
+    if (videoContainer.mozCancelFullScreen) { /* Firefox */
+      videoContainer.mozCancelFullScreen();
+    }else if (videoContainer.webkitExitFullscreen) { /* Chrome, Safari & Opera */
+      videoContainer.webkitExitFullscreen();
+    }else if (videoContainer.msExitFullscreen) { /* IE/Edge */
+      videoContainer.msExitFullscreen();
+    }
   }else{
     videoContainer.requestFullscreen();
   }

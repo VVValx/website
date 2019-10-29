@@ -226,9 +226,12 @@ body,html{
 .top-icons{
   display: flex;
   justify-content: space-between;
-  transform: translate(0, 25px);
   width: 90%;
-  margin: 0 auto;
+  position: absolute;
+  top: 1%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
 }
 
 .bottom-icons{
