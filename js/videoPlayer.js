@@ -9,6 +9,7 @@ const videoContainer = document.querySelector(".banner-player");
 
 bar.addEventListener("click", barPosition);
 video.addEventListener("timeupdate", updateBar);
+video.addEventListener("click", playPause);
 playPauseIcon.addEventListener("click", playPause);
 undo.addEventListener("click", ()=>{video.currentTime -= 5});
 redo.addEventListener("click", ()=>{video.currentTime += 5});
@@ -49,5 +50,12 @@ function setFullScreen(){
     }
   }else{
     videoContainer.requestFullscreen();
+    if(videoContainer.mozRequestFullscreen){
+      videoContainer.mozRequestFullscreen();
+    }else if(videoContainer.webkitRequestFullscreen){
+      videoContainer.webkitRequestFullscreen();
+    }else if(videoContainer.msRequestFullscreen){
+      videoContainer.msRequestFullscreen();
+    }
   }
 }
