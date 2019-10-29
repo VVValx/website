@@ -8,7 +8,7 @@
             <i class="far fa-heart"></i>
           </div>
 
-          <video  autoplay muted loop>
+          <video  autoplay muted loop id="homeVideo">
             <source src="videos/frozen2-comp.mp4">
           </video>
 
@@ -19,7 +19,7 @@
 
           <div class="bottom-icons">
             <div class="icons-left">
-              <i class="fas fa-play"></i>
+              <i class="fas fa-pause"></i>
               <i class="fas fa-undo"></i>
               <i class="fas fa-redo"></i>
             </div>
@@ -56,5 +56,6 @@
         </diV>
       </div>
     </div>
+    <script src="js/videoPlayer.js"></script>
 </body>
 </html>

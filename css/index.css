@@ -212,8 +212,8 @@ body,html{
 }
 
 .inner-bar{
-  width: 20%;
-  padding: 2px;
+  width: 0%;
+  padding: 2px 0;
   background: #E74C3C;
 }
 

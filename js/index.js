@@ -75,6 +75,5 @@ $(document).ready(function(){
     ajaxCall({value: value, name: name}, "inc/ValidateInput.inc.php", ele);
   });
 
-  //for slideshow
-  //slider();
+  
 });
