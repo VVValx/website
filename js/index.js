@@ -1,7 +1,6 @@
 import { ajaxCall } from "./ajax.js";
 import { slider } from "./slideshow.js";
 $(document).ready(function(){
-
   //toggles home on small screens
   $(".topMenu-list.bars").click(function(){
     $(".menu-s-body").animate({width: 'toggle'}, "slow");
@@ -74,4 +73,33 @@ $(document).ready(function(){
     }
     ajaxCall({value: value, name: name}, "inc/ValidateInput.inc.php", ele);
   });
+
+  const goTop = document.querySelector(".goTop");
+  const topMenu = document.querySelector(".topMenu");
+  const topMenuS = document.querySelector(".topMenu.menu-small");
+  window.addEventListener("scroll", ()=>{
+    const el = document.documentElement;
+    console.log(el.scrollTop);
+    if(el.scrollTop > 650){
+      goTop.style.display = " block";
+
+      topMenu.style.position = "fixed";
+      topMenu.style.width = "100%";
+      topMenu.style.background = "0 0 4px 4px rgba(0, 0, 0, 0.3)";
+
+      topMenuS.style.position = "fixed";
+      topMenuS.style.width = "100%";
+      
+    }else{
+      goTop.style.display = "none";
+      topMenu.style.position = "static";
+    }
+  });
+
+  goTop.addEventListener("click", ()=>{
+    document.documentElement.scrollTop = 0;
+  });
+
+
+
 });

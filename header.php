@@ -18,3 +18,6 @@
 </head>
 <body>
   <?php include "topMenu.php" ?>
+  <div class="goTop">
+    <i class="fas fa-arrow-up"></i>
+  </div>
