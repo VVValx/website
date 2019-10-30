@@ -5,12 +5,9 @@
       if(isset($_POST["search"])){
         $search = $_POST["search"];
         if(!empty($search)){
-          $sql = "SELECT * FROM gallery WHERE title LIKE '%$search%' OR
-                  category LIKE '%$search%' LIMIT 3";
-          $result = $this->connect()->prepare($sql);
-          $result->execute();
-          if($result->rowCount()){
-            while($rows=$result->fetch()){
+          if(strlen($search) >= 3){
+            $data = $this->searcher();
+            foreach($data as $rows){
               $path = $rows["path"];
               $title = $rows["title"];
               $filename = $rows["filename"];
@@ -36,6 +33,24 @@
                 </div>
               ";
             }
+          }
+        }
+      }
+    }
+
+    private function searcher(){
+      if(isset($_POST["search"])){
+        $search = $_POST["search"];
+        if(!empty($search)){
+          $sql = "SELECT * FROM gallery WHERE title LIKE '%$search%' OR
+                  category LIKE '%$search%' LIMIT 4";
+          $result = $this->connect()->prepare($sql);
+          $result->execute();
+          if($result->rowCount()){
+            while($rows=$result->fetch()){
+              $data[] = $rows;
+            }
+            return $data;
           }
         }
       }

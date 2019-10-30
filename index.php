@@ -56,6 +56,8 @@
         </diV>
       </div>
     </div>
+
+    <?php include "footer.php" ?>
     <script src="js/videoPlayer.js"></script>
 </body>
 </html>

@@ -77,23 +77,35 @@ $(document).ready(function(){
   const goTop = document.querySelector(".goTop");
   const topMenu = document.querySelector(".topMenu");
   const topMenuS = document.querySelector(".topMenu.menu-small");
+  const search = document.querySelector(".topMenu-search");
   window.addEventListener("scroll", ()=>{
     const el = document.documentElement;
-    console.log(el.scrollTop);
-    if(el.scrollTop > 650){
-      goTop.style.display = " block";
-
+    if(el.scrollTop > 100){
       topMenu.style.position = "fixed";
       topMenu.style.width = "100%";
-      topMenu.style.background = "0 0 4px 4px rgba(0, 0, 0, 0.3)";
+      topMenu.style.background = "rgba(0, 0, 0, 0.3)";
 
       topMenuS.style.position = "fixed";
       topMenuS.style.width = "100%";
-      
+      topMenuS.style.top = "0";
+      topMenuS.style.background = "rgba(0, 0, 0, 0.3)";
+
+      search.style.position = "fixed";
+      search.style.top = "68px";
+      search.style.background = "rgba(0, 0, 0, 0.3)";
     }else{
-      goTop.style.display = "none";
       topMenu.style.position = "static";
+      topMenu.style.background = "#ECF0F1";
+
+      topMenuS.style.position = "static";
+      topMenuS.style.background = "#ECF0F1";
+
+      search.style.position = "static";
+      search.style.background = "#ECF0F1";
     }
+
+    el.scrollTop > 650 ? goTop.style.display = " block": goTop.style.display = "none";
+
   });
 
   goTop.addEventListener("click", ()=>{
