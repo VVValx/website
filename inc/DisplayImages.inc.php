@@ -15,10 +15,13 @@ include "Dbc.inc.php";
         while($rows = $result->fetch()){
           $path = $rows["path"];
           $title = $rows["title"];
-          $id = $rows["id"];
+          $filename = $rows["filename"];
           echo "
           <div class='img-grid'>
-            <img src=$path>
+            <a href='galleryDetail.php?img=$filename'>
+              <img src=$path>
+            </a>
+
             <div class='img-grid-item'>
               <div class='img-grid-icon cursor-pointer'>
                 <i class='fa fa-heart-o'></i>

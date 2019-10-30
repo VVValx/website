@@ -39,6 +39,7 @@ function barPosition(e){
 }
 
 function setFullScreen(){
+
   if(videoContainer.fullscreenElement){
     videoContainer.exitFullscreen();
     if (videoContainer.mozCancelFullScreen) { /* Firefox */
@@ -48,6 +49,7 @@ function setFullScreen(){
     }else if (videoContainer.msExitFullscreen) { /* IE/Edge */
       videoContainer.msExitFullscreen();
     }
+
   }else{
     videoContainer.requestFullscreen();
     if(videoContainer.mozRequestFullscreen){

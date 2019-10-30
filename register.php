@@ -27,7 +27,7 @@
           </div>
 
           <div class="form-input">
-            <p>Already have an account? <a href="#">Login</a></p>
+            <p>Already have an account? <a href="login.php">Login</a></p>
           </div>
 
           <div class="form-input">

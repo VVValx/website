@@ -13,6 +13,7 @@
             while($rows=$result->fetch()){
               $path = $rows["path"];
               $title = $rows["title"];
+              $filename = $rows["filename"];
               echo "
                 <div class='search-item'>
                   <div class='img-item'>
@@ -25,7 +26,11 @@
                     </header>
 
                     <div class='search-btn'>
-                      <button>download</button>
+                      <a href='galleryDetail.php?img=$filename'>
+                        <button>
+                          More details
+                        </button>
+                        </a>
                     </div>
                   </div>
                 </div>

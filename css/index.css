@@ -323,6 +323,7 @@ body,html{
   grid-gap: 10px;
 }
 
+
 .img-grid{
   width: 100%;
   height: 100%;
@@ -363,14 +364,6 @@ body,html{
   position: absolute;
   top: 5px;
   right: 5px;
-}
-
-.img-grid-btn button{
-  border: none;
-  background: #2E86C1;
-  padding: 10px 15px;
-  border-radius: 5px;
-  color: #ECF0F1;
 }
 
 .form-container {
@@ -421,6 +414,37 @@ body,html{
   margin-bottom: 10px;
 }
 
+/* Gallery detail */
+.details-container{
+  width: 95%;
+  margin: 0px auto;
+}
+
+.details-item{
+  width: 55%;
+  margin: 50px auto;
+}
+
+.details-list{
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.details-list img{
+  width: 100%;
+  border-radius: 5px;
+}
+
+.details-list button{
+  width: 100%;
+  border: none;
+  background: #2C3E50;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: #ECF0F1;
+  cursor: pointer;
+}
+
 /************************* Footer ******************/
 
 @media screen and (max-width: 768px) {
@@ -449,5 +473,9 @@ body,html{
   }
   .cat-list{
     text-align: center;
+  }
+
+  .details-item{
+    width: 100%;
   }
 }

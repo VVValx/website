@@ -17,7 +17,7 @@
           </div>
 
           <div class="form-input">
-            <p>Don't have an account? <a href="#">register</a></p>
+            <p>Don't have an account? <a href="register.php">register</a></p>
           </div>
 
           <div class="form-input">
