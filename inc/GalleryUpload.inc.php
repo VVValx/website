@@ -1,7 +1,7 @@
 <?php
   include "Dbc.inc.php";
   class GalleryUpload extends Dbc{
-     function upload(){
+     public function upload(){
       if(isset($_POST["upload"])){
          $path = "images/gallery/";
         $extAllowed = ["jpg", "jpeg","png", "gif"];

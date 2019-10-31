@@ -26,7 +26,7 @@
 
           <div class="form-input">
             <button class="cursor-pointer" name="login" id="login">
-              Create Account
+              Login
             </button>
           </div>
         </div>

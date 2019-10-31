@@ -6,6 +6,8 @@
         <ul class='topMenu-item left-menu'>
           <li class='topMenu-list'><a href='index.php'><i class='fa fa-home'></i></a></li>
           <li class='topMenu-list'><a href='gallery.php'>Gallery</a></li>
+          <li class='topMenu-list'><a href='gallery.php'>Movies</a></li>
+          <li class='topMenu-list'><a href='gallery.php'>Tv Series</a></li>
         </ul>
 
         <ul class='topMenu-item right-menu'>
@@ -94,6 +96,8 @@
         <ul class='topMenu-item left-menu'>
           <li class='topMenu-list'><a href='index.php'><i class='fa fa-home'></i></a></li>
           <li class='topMenu-list'><a href='gallery.php'>Gallery</a></li>
+          <li class='topMenu-list'><a href='gallery.php'>Movies</a></li>
+          <li class='topMenu-list'><a href='gallery.php'>Tv Series</a></li>
         </ul>
 
         <ul class='topMenu-item right-menu'>

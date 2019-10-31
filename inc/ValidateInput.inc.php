@@ -1,6 +1,6 @@
 <?php
   class ValidateInput{
-    function __construct(){
+    function inputValidate(){
       $name = $_POST["name"];
       $value = $_POST["value"];
       $username_pattern = "/^[a-zA-z]+[0-9a-zA-z]{5,}$/";
@@ -38,6 +38,4 @@
       }
     }
   }
-
-  $validateInput = new ValidateInput();
  ?>

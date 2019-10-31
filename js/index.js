@@ -19,13 +19,13 @@ $(document).ready(function(){
   //search
   $(".menu-search input").keyup(function(){
     const search = $(this).val();
-    ajaxCall({search: search}, "inc/ImageSearch.inc.php", ".search-content");
+    ajaxCall({search: search}, "inc/callImageSearch.inc.php", ".search-content");
   });
 
   //loads images according to category selected
   $(".cat-list").click(function(){
     const cat = $(this).html();
-    ajaxCall({cat: cat}, "inc/DisplayImages.inc.php", ".grid-container");
+    ajaxCall({cat: cat}, "inc/callDisplayImages.inc.php", ".grid-container");
   });
 
 
@@ -43,7 +43,7 @@ $(document).ready(function(){
         repassword: repassword,
         email:email
       },
-      "inc/ValidateForm.inc.php",
+      "inc/callValidateForm.inc.php",
       ".form-error"
     );
   });
@@ -71,7 +71,7 @@ $(document).ready(function(){
       default:
         ele = ".submit-error";
     }
-    ajaxCall({value: value, name: name}, "inc/ValidateInput.inc.php", ele);
+    ajaxCall({value: value, name: name}, "inc/callValidateInput.inc.php", ele);
   });
 
   const goTop = document.querySelector(".goTop");

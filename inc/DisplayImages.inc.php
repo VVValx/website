@@ -1,7 +1,7 @@
 <?php
 include "Dbc.inc.php";
   class DisplayImages extends Dbc{
-    function __construct(){
+    function imagesDisplay(){
       $cat = strtolower($_POST["cat"]);
       if($cat == "all"){
         $sql = "SELECT * FROM gallery";
@@ -37,8 +37,6 @@ include "Dbc.inc.php";
         exit(0);
       }
 
-
     }
   }
-  $displayImages = new DisplayImages();
 ?>

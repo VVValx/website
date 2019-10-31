@@ -1,7 +1,7 @@
 <?php
   include "Dbc.inc.php";
   class ValidateForm extends Dbc{
-    function __construct(){
+    function formValidate(){
       $username = $_POST["username"];
       $password = $_POST["password"];
       $repassword = $_POST["repassword"];
@@ -36,5 +36,4 @@
       }
     }
   }
-  $validateForm = new ValidateForm();
 ?>
