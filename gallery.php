@@ -3,8 +3,8 @@
     <?php include "catMenu.php" ?>
     <div class="grid-container">
       <?php
-        $gallery = new DisplayGalleryImages();
-        $gallery->displayGallery();
+        $gallery = new Gallery();
+        $gallery->galleryDisplay();
       ?>
     </div>
   </div>

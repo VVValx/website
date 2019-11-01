@@ -6,7 +6,6 @@
       $username_pattern = "/^[a-zA-z]+[0-9a-zA-z]{5,}$/";
       $password_pattern = "/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{5,}$/";
 
-      $pass = $value;
       $match_username = preg_match($username_pattern, $value);
       $match_password = preg_match($password_pattern, $value);
       switch($name){

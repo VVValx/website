@@ -7,7 +7,7 @@
           <li class='topMenu-list'><a href='index.php'><i class='fa fa-home'></i></a></li>
           <li class='topMenu-list'><a href='gallery.php'>Gallery</a></li>
           <li class='topMenu-list'><a href='gallery.php'>Movies</a></li>
-          <li class='topMenu-list'><a href='gallery.php'>Tv Series</a></li>
+          <li class='topMenu-list'><a href='gallery.php'>Series</a></li>
         </ul>
 
         <ul class='topMenu-item right-menu'>
@@ -80,7 +80,7 @@
           <li class='menu-s-list'><a href='index.php'>Home <i class='fa fa-home'></i></a></li>
           <li class='menu-s-list'><a href='gallery.php'>Gallery <i class='fa fa-image'></i></a></li>
           <li class='menu-s-list'><a href=''>Movies</a></li>
-          <li class='menu-s-list'><a href=''>Tv Series</a></li>
+          <li class='menu-s-list'><a href=''>Series</a></li>
           <li class='menu-s-list'>
             <a href='imageUpload.php'>
               Upload
@@ -97,7 +97,7 @@
           <li class='topMenu-list'><a href='index.php'><i class='fa fa-home'></i></a></li>
           <li class='topMenu-list'><a href='gallery.php'>Gallery</a></li>
           <li class='topMenu-list'><a href='gallery.php'>Movies</a></li>
-          <li class='topMenu-list'><a href='gallery.php'>Tv Series</a></li>
+          <li class='topMenu-list'><a href='gallery.php'>Series</a></li>
         </ul>
 
         <ul class='topMenu-item right-menu'>
@@ -177,7 +177,7 @@
           <li class='menu-s-list'><a href='index.php'>Home <i class='fa fa-home'></i></a></li>
           <li class='menu-s-list'><a href='gallery.php'>Gallery <i class='fa fa-image'></i></a></li>
           <li class='menu-s-list'><a href=''>Movies</a></li>
-          <li class='menu-s-list'><a href=''>Tv Series</a></li>
+          <li class='menu-s-list'><a href=''>Series</a></li>
         </ul>
       </nav>
 

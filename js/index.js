@@ -25,7 +25,7 @@ $(document).ready(function(){
   //loads images according to category selected
   $(".cat-list").click(function(){
     const cat = $(this).html();
-    ajaxCall({cat: cat}, "inc/callDisplayImages.inc.php", ".grid-container");
+    ajaxCall({cat: cat}, "inc/callGallery.inc.php", ".grid-container");
   });
 
 
@@ -82,6 +82,7 @@ $(document).ready(function(){
     const el = document.documentElement;
     if(el.scrollTop > 100){
       topMenu.style.position = "fixed";
+      topMenu.style.top = "0";
       topMenu.style.width = "100%";
       topMenu.style.background = "rgba(0, 0, 0, 0.3)";
 
@@ -91,7 +92,7 @@ $(document).ready(function(){
       topMenuS.style.background = "rgba(0, 0, 0, 0.3)";
 
       search.style.position = "fixed";
-      search.style.top = "68px";
+      search.style.top = "66px";
       search.style.background = "rgba(0, 0, 0, 0.3)";
     }else{
       topMenu.style.position = "static";
@@ -104,7 +105,7 @@ $(document).ready(function(){
       search.style.background = "#ECF0F1";
     }
 
-    el.scrollTop > 650 ? goTop.style.display = " block": goTop.style.display = "none";
+    el.scrollTop > 150 ? goTop.style.display = " block": goTop.style.display = "none";
 
   });
 
